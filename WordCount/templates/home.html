@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet">
+</head>
+<body>
+<h1 align="center" style="background-color:aqua ; color: red">Word Count</h1>
+<form action="{% url 'count' %}" method="get">
+    <div align="center"><textarea style="font-size: 20px; font-family: 'Fira Code Medium'" cols="60" rows="10"
+                                  name="fulltext"></textarea><br>
+        <input type="text" name="word"><br>
+        <input type="submit" value="Count"><br>
+        <a href="{% url 'about'%}">About</a>
+    </div>
+</form>
+</body>
+</html>
